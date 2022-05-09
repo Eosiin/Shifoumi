@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="getUserChoice('Pierre')">Pierre</button>
+    </div>
+    <div>
+        <button onclick="getUserChoice('Papier')">Papier</button>
+    </div>
+    <div>
+        <button onclick="getUserChoice('Ciseaux')">Ciseaux</button>
+    </div>
+    <p id="userChoice"></p>
+    <p id="computerChoice"></p>
+    <p id="message"></p>
+
+
+    <script>
+        let userChoice = document.getElementById('userChoice')
+        let computerChoice = document.getElementById('computerChoice')
+        let message = document.getElementById('message')
+
+        function getUserChoice(choice) {
+            userChoice.innerHTML = choice
+            getComputerChoice()
+            findWinner()
+        }
+
+        function getComputerChoice() {
+            let tableaux = ['Pierre', 'Papier', 'Ciseaux']
+            let aleaNumber = Math.floor(Math.random() * 3)
+            computerChoice.innerHTML = tableaux[aleaNumber]
+
+        }
+
+
+
+
+
+
+
+
+
+        function findWinner() {
+            if ((userChoice.innerHTML == 'Papier') && (computerChoice.innerHTML == 'Papier')) {
+                message.innerHTML = 'Match nul'
+            }
+            if ((userChoice.innerHTML == 'Pierre') && (computerChoice.innerHTML == 'Pierre')) {
+                message.innerHTML = 'Match nul'
+            }
+            if ((userChoice.innerHTML == 'Ciseaux') && (computerChoice.innerHTML == 'Ciseaux')) {
+                message.innerHTML = 'Match nul'
+            }
+
+
+            if ((userChoice.innerHTML == 'Pierre') && (computerChoice.innerHTML == 'Papier')) {
+                message.innerHTML = 'Perdu'
+            }
+            if ((userChoice.innerHTML == 'Papier') && (computerChoice.innerHTML == 'Ciseaux')) {
+                message.innerHTML = 'Perdu'
+            }
+            if ((userChoice.innerHTML == 'ciseaux') && (computerChoice.innerHTML == 'Pierre')) {
+                message.innerHTML = 'Perdu'
+            }
+
+
+            if ((userChoice.innerHTML == 'Papier') && (computerChoice.innerHTML == 'Pierre')) {
+                message.innerHTML = 'Gagné'
+            }
+            if ((userChoice.innerHTML == 'Pierre') && (computerChoice.innerHTML == 'Ciseaux')) {
+                message.innerHTML = 'Gagné'
+            }
+            if ((userChoice.innerHTML == 'Ciseaux') && (computerChoice.innerHTML == 'Papier')) {
+                message.innerHTML = 'Gagné'
+            }
+        }
+    </script>
+</body>
+
+</html>

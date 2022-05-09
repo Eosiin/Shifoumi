@@ -1,0 +1,83 @@
+exo 2
+
+
+Algorithme afficher données clients
+
+variables :
+ userArray[5] : tableaux de données
+ userInfo[3] : tableaux de chaines de caractère
+ count : nombres
+ count2 : nombres
+instruction : 
+userArray[] <- userInfo[prénoms1, noms1, mail1]
+userArray[] <- userInfo[prénoms2, noms2, mail2]
+userArray[] <- userInfo[prénoms3, noms3, mail3]
+userArray[] <- userInfo[prénoms4, noms4, mail4]
+userArray[] <- userInfo[prénoms5, noms5, mail5]
+
+
+pour count de 0 à 4
+	pour count2 de 0 à 2
+		Ecrire (userArray[count][count2])
+	Fin pour
+Fin pour
+
+
+
+en JS : 
+
+let userArray = [];
+userArray = [
+['pre1', 'nom1', 'mail1'],
+['pre2', 'nom2', 'mail2'],
+['pre3', 'nom3', 'mail3'],
+['pre4', 'nom4', 'mail4'],
+['pre5', 'nom5', 'mail5'],
+
+]
+for (let i=0; i <=; i++) {
+for(let y=0; y <=2; y++) {
+console.log(userArray[i][y])
+}
+}
+
+
+Exo 3
+
+let logicNumber = [];
+
+logicNumber[0]= 0
+logicNumber[1]= 2
+logicNumber[2]= 4
+logicNumber[3]= 6
+logicNumber[4]= 8
+logicNumber[5]= 10
+logicNumber[6]= 12
+logicNumber[7]= 14
+logicNumber[8]= 16
+logicNumber[9]= 18
+logicNumber[10]= 20
+
+console.log(logicNumber[5])
+
+
+en boucle :
+
+//variables
+let logicNumber = [];
+let count;
+let value;
+
+// instructions
+value = 0
+for(let count = 0; count <= 20; count += 2){
+ logicNumber[calue] = count;
+ value = value + 1
+}
+
+console.log(locgicNumber[5])
+
+
+
+
+

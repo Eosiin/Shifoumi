@@ -1,0 +1,109 @@
+ Exo 1
+
+firstWord <- "Hello"
+secondWord <- "World" 
+
+Exo 2
+ Ecrire (What's your name?)
+Lire (Name)
+Ecrire (Bonjour Name)  
+
+ Exo 3
+
+168.
+
+
+
+
+AUTRES EXO
+
+Exo 1
+
+Ecrire (How old are you ?)
+Lire (Age)
+Ecrire(Madame ou Monsieur ?)
+Lire (Genre)
+Si age >= 18ans alors
+Ecrire (vous etes majeur et vous etes (genre)) 
+sinon 
+ecrire (vous etes mineur et vous etes (genre))
+fin si
+
+Exo 2
+
+firstNumber : entier
+secondNumber : entier
+si (firstNumber / secondNumber) % 4 = 0 alors
+Ecrire oui
+sinon
+Ecrire non
+fin si
+
+Exo 3 
+
+
+27,95 
+
+
+
+AUTRE EXO
+
+Exo 1
+
+Pour compteur de 0 à 30 par pas de 5
+Si compteur % 2 = 0 alors
+Ecrire (compteur)
+sinon
+Ecrire (Oops)
+Fin pour
+
+
+Exo 2
+bankAccount : flottant
+bankAccount <- 10k
+Tant que bankAccount >0 faire
+bankAccount <- (bankAccount-50)
+Ecrire (il vous reste (bankAccount))
+fin tant que
+
+Exo 3
+55
+
+
+
+
+
+AUTRE EXO
+  Exo 1
+variables : 
+monTableau [10] : un tableau de nombre
+result : un nombre
+
+instructions :
+monTableau []<- monTableau [ 2,12,25,41,53,69,73,88,99,101]
+result <- 1
+pour count 0 à 9 
+result = result*monTableau[count]
+Ecrire (result)
+fin pour
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

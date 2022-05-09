@@ -1,0 +1,62 @@
+EXO LES FONCTIONS ALGORITHME
+
+
+Exo 1
+
+sous-algo sumNumber
+
+paramètre d'entrée :
+
+firstNumber : nombre
+secondNumber : nombre
+
+paramètre de sortie :
+resultat <- (firstNumber + secondNumber)
+
+algorithme multiply by 5
+
+variable :
+firstNumber : nombre
+secondNumber : nombre
+resultat : nombre
+resultat by 5 : nombre
+
+instructions :
+resultat <- sumNumber ( firstNumber, secondNumber)
+resultat by 5 <- resultat*5
+
+
+
+
+
+
+
+Exo 2
+
+sous-algo sumNumber
+
+paramètre d'entrée :
+
+firstNumber : nombre
+secondNumber : nombre
+
+paramètre de sortie :
+resultat <- (firstNumber%secondNumber)
+
+algorithme multiply by 60
+
+variable :
+firstNumber : nombre
+secondNumber : nombre
+resultat : nombre
+resultat by 60 : nombre
+
+instructions :
+resultat <- sumNumber ( firstNumber, secondNumber)
+resultat by 60 <- resultat*60
+
+
+
+
+Exo 3
+ 15372.

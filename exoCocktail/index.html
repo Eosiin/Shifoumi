@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exoCocktail</title>
+
+</head>
+
+<body>
+    <h1>Veuillez choisir votre cocktail</h1>
+    <div>
+        <button id="button" onclick="afficherMojito()">Mojito</button>
+    </div>
+    <div>
+        <button id="button" onclick="afficherTipunch()">Ti punch</button>
+    </div>
+    <div>
+        <button id="button" onclick="afficherSexonthebeach()">Sex on the beach</button>
+    </div>
+
+    <p id="choix"></p>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // je cible l'id respectif
+
+        let button = document.getElementById('button')
+        let choix = document.getElementById('choix')
+
+
+        // fonction qui écrit dans l'élément choix
+        function afficherMojito() {
+            choix.innerHTML = `Vous avez choisi le Mojito`;
+        }
+
+
+        function afficherTipunch() {
+            choix.innerHTML = `Vous avez choisi le Tipunch`;
+        }
+
+        function afficherSexonthebeach() {
+            choix.innerHTML = `Vous avez choisi le Sex on the beach`;
+        }
+        // L44 paramètre d'entrée entre parenthèse sera réutiliser tel quel L45 entre acolade
+
+        let tableaux = ['Mojito', 'Tipunch', 'Sex on the beach']
+        // définir de manière aléatoire se repporter a GuessMyNumber
+        let theNumber = Math.floor(Math.random() * 3);
+        console.log(tableaux[theNumber])
+        
+    </script>
+</body>
+
+</html>
+
+<!-- en algo :
+Algo recuperer choix utilisateur
+
+variable
+bouton : element HTM
+valeurBouton : String
+
+instruction
+valeurBouton <- au click bouton-->
